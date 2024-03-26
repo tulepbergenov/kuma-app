@@ -1,3 +1,4 @@
+import { ThemeToggler } from "@/_features";
 import { cn } from "@/_shared/lib";
 import Link from "next/link";
 import { IHeader } from "./Header.type";
@@ -6,7 +7,7 @@ export const Header = ({ className, ...props }: IHeader) => {
   return (
     <header className={cn(className)} {...props}>
       <div className="container">
-        <div className="py-5">
+        <div className="flex items-center justify-between gap-3 py-5">
           <nav>
             <ul className="flex items-center gap-5">
               <li>
@@ -23,6 +24,7 @@ export const Header = ({ className, ...props }: IHeader) => {
               </li>
             </ul>
           </nav>
+          <ThemeToggler />
         </div>
       </div>
     </header>

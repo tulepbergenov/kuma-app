@@ -5,3 +5,5 @@ export interface ILayout {
 }
 
 export interface IDivElement extends ComponentProps<"div"> {}
+
+export interface IButtonElement extends ComponentProps<"button"> {}
