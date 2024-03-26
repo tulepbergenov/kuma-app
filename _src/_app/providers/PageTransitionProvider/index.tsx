@@ -4,7 +4,7 @@ import { ILayout } from "@/_shared/types";
 import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 
-export const PageTransition = ({ children }: ILayout) => {
+export const PageTransitionProvider = ({ children }: ILayout) => {
   const pathname = usePathname();
 
   return (
