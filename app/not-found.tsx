@@ -1,18 +1,9 @@
-import { appTitle } from "@/_shared/lib";
+import { NotFoundView } from "@/_views";
 import { Metadata } from "next";
+import { _notFoundMetadata } from "./_meta";
 
-export const metadata: Metadata = {
-  title: appTitle("Ресурс не найден"),
-};
+export const metadata: Metadata = _notFoundMetadata;
 
-const Home = () => {
-  return (
-    <section>
-      <header>
-        <h1>Ресурс не найден</h1>
-      </header>
-    </section>
-  );
-};
+const NotFound = () => <NotFoundView />;
 
-export default Home;
+export default NotFound;

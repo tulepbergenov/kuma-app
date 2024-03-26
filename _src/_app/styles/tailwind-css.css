@@ -2,10 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-.block {
-  position: fixed;
+@layer base {
+  *::selection {
+    @apply bg-app-clr-error text-white;
+  }
 
-  display: inline;
-
-  color: red;
+  html {
+    color-scheme: dark light;
+  }
 }
