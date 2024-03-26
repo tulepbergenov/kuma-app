@@ -17,8 +17,12 @@ const RootLayout = ({
   children: ReactNode;
 }>) => {
   return (
-    <html lang="ru" className={cn("!h-full", interFont.variable)}>
-      <body className="rendering-speed bg-app-clr-light text-app-clr-dark font-app-fm-inter !h-full text-[16px] font-normal leading-[21px] antialiased">
+    <html
+      lang="ru"
+      className={cn("!h-full", interFont.variable)}
+      suppressHydrationWarning
+    >
+      <body className="rendering-speed bg-app-clr-light text-app-clr-dark font-app-fm-inter dark:bg-app-clr-dark dark:text-app-clr-light !h-full text-base font-normal antialiased">
         <Providers>
           <AppLayout>{children}</AppLayout>
         </Providers>

@@ -5,6 +5,8 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./_src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  // eslint-disable-next-line quotes
+  darkMode: ["selector", '[data-theme="dark"]'],
   theme: {
     extend: {
       colors: {
