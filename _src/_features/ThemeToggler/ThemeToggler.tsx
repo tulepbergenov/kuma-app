@@ -29,7 +29,7 @@ export const ThemeToggler = ({ className, ...props }: IThemeToggler) => {
           title={`Переключить тему на ${currentTheme === "dark" ? "светлую" : "темную"}`}
           aria-label={`Переключить тему на ${currentTheme === "dark" ? "светлую" : "темную"}`}
           className={cn(
-            "relative inline-block h-6 w-6 transition-colors delay-0 duration-300 ease-in-out hover:text-app-clr-primary active:text-app-clr-primary",
+            "relative inline-block h-6 w-6 transition-colors delay-0 duration-300 ease-in-out active:text-app-clr-primary [@media(hover:hover)]:hover:text-app-clr-primary",
             className,
           )}
           onClick={onChangeTheme}
