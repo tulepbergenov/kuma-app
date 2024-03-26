@@ -1,8 +1,9 @@
+import { AppLayout } from "@/_app/layouts";
+import { Providers } from "@/_app/providers";
+import "@/_app/styles/_index.css";
 import type { Metadata, Viewport } from "next";
 import { ReactNode } from "react";
 import { _metadata, _viewport } from "./_meta";
-import { Providers } from "@/_app/providers";
-import { AppLayout } from "@/_app/layouts";
 
 export const metadata: Metadata = _metadata;
 

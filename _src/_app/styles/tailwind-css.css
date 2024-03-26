@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.block {
+  position: fixed;
+
+  display: inline;
+
+  color: red;
+}
